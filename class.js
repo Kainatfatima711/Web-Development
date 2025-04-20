@@ -1,6 +1,8 @@
-var person={
-    firstName:"I",
-    age :20,
+var value=Math.acos(-1)
+document.write("Demo 1 test value:" + value + "<br>" )
 
-}
-document.getElementById("demo").innerHTML=person.firstName + "am" + person.age + "years old";
+var value=Math.asin(1)
+document.write("Demo2 test value:" + value +"<br>" )
+
+var value=Math.atan(.5)
+document.write("Demo3 test value:" + value + "<br>" )
