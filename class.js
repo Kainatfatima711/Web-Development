@@ -1,9 +1,12 @@
-var fruits=["Banana", "Orange", "Apple", "Mango"]
+function add(a,b) {
+    return a+b;
+}
 
-document.getElementById("myjoin").innerHTML = fruits.join(" * ");
+function average (a,b) {
+    return add(a,b) / 2 ;
+}
 
-document.getElementById("myfirstpop").innerHTML = fruits ;
+let result =average(10,20) ;
 
-fruits.pop();
 
-document.getElementById("mysecondpop").innerHTML = fruits
+document.getElementById("demo").innerHTML=result ;
