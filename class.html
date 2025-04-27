@@ -3,21 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login form</title>
 </head>
 <body>
+    <h2>REAL TIME VALIDATION USING JS</h2>
 
-    <h2>Java Script Array Methods</h2>
-    
-    <h2>Join() and Pop()</h2>
+    <hr>
+    <form id="login form"  onsubmit="validate(event)">
 
-    <p>The join() method joins Array elements into a string and the pop() removes the 
-        last element from an Array</p>
+     <fieldset>
+        
+        <!---Email Input field-->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email " id="email" name="email">
 
-        <p id="myjoin"></p>
-        <p id="myfirstpop"></p>
-        <p id="mysecondpop"></p>
-    
+        </div>
+
+        <label for="password">password:</label>
+        <!--Password input field with a minimum length requirement-->
+        <div>
+            <input type="password" id="password" name="password"
+            minlength="8">
+        </div>
+
+        <!--Submit button for the form-->
+        <button type="submit">Login</button>
+     </fieldset>
+    </form>
+
+    <!--Div for displaying validation message-->
+    <div id="message"></div>
+
+    <!--Link to external java script file-->
+     <script src="class.js"></script>
+
+
 </body>
-<script src="class.js"></script>
+
 </html>

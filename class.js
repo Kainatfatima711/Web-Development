@@ -1,9 +1,26 @@
-var fruits=["Banana", "Orange", "Apple", "Mango"]
+function validate( e ) {
+    e.preventDefault( );
+    
 
-document.getElementById("myjoin").innerHTML=fruits.join (" * ");
 
-document.getElementById("myfirstpop").innerHTML=fruits;
+    const email=document.getElementById("email").value ;
+    const pass=document.getElementById("password").value ;
+    const msgbox =document.getElementById("message");
 
-fruits.pop();
+    let message='';
+    if(email=== ''){
+        message="Please Enter an Email.";
+        msgbox .style.color="red";
+    }else if (pass=== ''){
+        message="Please Enter your Password .";
+        msgbox.style.color="red";
 
-document.getElementById("mysecondpop").innerHTML=fruits;
+    } 
+
+    else{
+        message="Login Successful !";
+        msgbox.style.color="green";
+    }
+    msgbox.innerText=message;
+    
+}
