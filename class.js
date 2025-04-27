@@ -1,12 +1,9 @@
-function add(a,b) {
-    return a+b;
-}
+var fruits=["Banana", "Orange", "Apple", "Mango"]
 
-function average (a,b) {
-    return add(a,b) / 2 ;
-}
+document.getElementById("myjoin").innerHTML=fruits.join (" * ");
 
-let result =average(10,20) ;
+document.getElementById("myfirstpop").innerHTML=fruits;
 
+fruits.pop();
 
-document.getElementById("demo").innerHTML=result ;
+document.getElementById("mysecondpop").innerHTML=fruits;
