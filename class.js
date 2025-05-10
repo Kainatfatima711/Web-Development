@@ -1,15 +1,10 @@
-var points = [ 40 ,100 ,1 ,5 ,25 ,10 ];
+var numbers = [28,6,19,95]
 
-document.getElementById("result").innerHTML=points;
+function myFunction(num) {
+    return num * 10;
 
-function ascending()  {
-    points.sort(function (a,b) {return a-b} )
-    document.getElementById("result").innerHTML=points;
 }
 
+var newarray = numbers.map(myFunction);
 
-function descending() {
-    points.sort(function (a,b) {return b-a})
-    document.getElementById("result").innerHTML=points;
-}
-
+document.getElementById("product_value").innerHTML=newarray;
