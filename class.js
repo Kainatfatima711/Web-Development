@@ -1,8 +1,3 @@
-try {
-    youralert ("Welcome Guest!");
-}
+add = (a,b) => a+b
 
-catch (err) {
-
-    document.getElementById("error_message").innerHTML=err.message;
-}
+document.getElementById("result").innerHTML=add(2,3)
