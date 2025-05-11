@@ -1,10 +1,13 @@
-var numbers = [28,6,19,95]
+var str="hello how are you doing for the day";
+var search_position = str.search("doing");
 
-function myFunction(num) {
-    return num * 10;
+var txt =str.replace("how are" , "how are you")
 
-}
+var x = 70;
+var y = 90;
 
-var newarray = numbers.map(myFunction);
 
-document.getElementById("product_value").innerHTML=newarray;
+document.getElementById("search_result").innerHTML = search_position;
+document.getElementById("replace_result").innerHTML = txt;
+
+document.getElementById("string_result").innerHTML=String( x ) + String( y )
