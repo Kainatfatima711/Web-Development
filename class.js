@@ -1,10 +1,15 @@
-var numbers = [28,6,19,95]
+function myFunction(){
+    var x = 10;
+    var y = 20;
 
-function myFunction(num) {
-    return num * 10;
+
+    var a = eval("x + y") + "<br>";
+    var b = eval("2 * 2") + "<br>";
+    var c = eval("y - x") + "<br>";
+
+    var res=a+b+c; //concatenates the string
+    document.getElementById("result").innerHTML=res;
+    
+    
 
 }
-
-var newarray = numbers.map(myFunction);
-
-document.getElementById("product_value").innerHTML=newarray;
