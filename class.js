@@ -1,10 +1,12 @@
-var studentdetails = {
-    name:"Riya",
-    age:12,
-    grade:7
-};
+async function add( a , b){
+    let response=await a + b ; // 25= response
+    display(response);
 
-   var myJSON = JSON.stringify(studentdetails); //converts object to JSON for sending data
+    
+}
 
-   var newOBj=JSON.parse(myJSON); //converts JSON into object while receiving data
-   document.getElementById("result").innerHTML=newOBj.name;
+ function display(some){
+    document.getElementById("result").innerHTML=some;
+ }
+
+ add(5,20)
