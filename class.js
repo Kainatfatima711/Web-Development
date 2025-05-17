@@ -1,8 +1,10 @@
-try {
-    youralert ("Welcome Guest!");
-}
+var studentdetails = {
+    name:"Riya",
+    age:12,
+    grade:7
+};
 
-catch (err) {
+   var myJSON = JSON.stringify(studentdetails); //converts object to JSON for sending data
 
-    document.getElementById("error_message").innerHTML=err.message;
-}
+   var newOBj=JSON.parse(myJSON); //converts JSON into object while receiving data
+   document.getElementById("result").innerHTML=newOBj.name;
